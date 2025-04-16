@@ -1,0 +1,103 @@
+
+  
+ /* Body background */
+body {
+    background-color: #fefcfb;
+  }
+  
+  /* Navbar Styling */
+  .custom-navbar {
+    background-color: #fff5e6;
+    padding: 10px 30px;
+    border-bottom: 2px solid #ffe2cc;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.05rem;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ff6f61;
+  }
+  
+  /* Navbar hover underline animation */
+  .nav-animate {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-animate::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff6f61;
+    transition: 0.4s ease-out;
+  }
+  
+  .nav-animate:hover::after {
+    width: 100%;
+  }
+  
+  /* Cart Button */
+  #nav1 {
+    border: 2px solid #ff6f61;
+    background-color: white;
+    color: #ff6f61;
+    font-weight: 500;
+    transition: 0.3s ease;
+  }
+  
+  #nav1:hover {
+    background-color: #ff6f61;
+    color: white;
+  }
+  
+  
+
+
+  /* Carousel Image */
+  #slider {
+    height: 450px;
+    object-fit: cover;
+    filter: brightness(90%);
+  }
+  @media (max-width: 768px) {
+    #slider {
+      height: 300px;
+    }
+  }
+  /* Fade-in effect for captions */
+  .fade-in-text {
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Custom button hover */
+  #nav1:hover {
+    background-color: #ff6f61;
+    color: white;
+  }
+  
+  /* Optional: Make captions more readable */
+  .carousel-caption {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Category Cards */
+.category-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  .category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  

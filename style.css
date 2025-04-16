@@ -1,0 +1,180 @@
+
+/* icons */
+#circle-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+}
+#circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 90%;
+    background-color:   yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    box-sizing: border-box;
+}
+#icon{
+    font-size: 50px;
+    color: black;
+    background-color: rgba(255, 208, 0, 0.781);
+    border-radius: 140%;
+    padding: 25px;
+    
+    width: 270px;
+    height: 80px;
+    fill: black;
+    padding-top: 4px;
+}
+
+/* about section */
+.text-style{
+    /* font-family: cursive;
+    font-style: oblique; */
+    font-size: large;
+}
+
+
+    
+
+#butcher-text{
+    /* font-family: cursive;
+    font-style: oblique; */
+    font-size: large;
+    padding-top: 5px;
+    text-align: center;
+    
+    
+}
+
+
+
+
+
+/* Body background */
+body {
+    background-color: #fefcfb;
+  }
+  
+  /* Navbar Styling */
+  .custom-navbar {
+    background-color: #fff5e6;
+    padding: 10px 30px;
+    border-bottom: 2px solid #ffe2cc;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.05rem;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ff6f61;
+  }
+  
+  /* Navbar hover underline animation */
+  .nav-animate {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-animate::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff6f61;
+    transition: 0.4s ease-out;
+  }
+  
+  .nav-animate:hover::after {
+    width: 100%;
+  }
+  
+  /* Cart Button */
+  #nav1 {
+    border: 2px solid #ff6f61;
+    background-color: white;
+    color: #ff6f61;
+    font-weight: 500;
+    transition: 0.3s ease;
+  }
+  
+  #nav1:hover {
+    background-color: #ff6f61;
+    color: white;
+  }
+
+
+
+
+/* cards */
+#btn-style{
+    background-color: rgb(255, 204, 0);
+    color: black; 
+    font-weight: bold;
+    width: 325px;
+    padding-left: 7%;
+}
+#btn-stock-style{
+    background-color: rgba(210, 231, 252, 0.906);
+    color: black; 
+    font-weight: bold;
+    width: 325px;
+    padding-left: 5%;
+    border: 3px solid black;
+    text-align: center;
+}
+
+/* popular items section */
+#item-images{
+    border-radius: 130px;
+    border: 10px solid rgb(255, 200, 0);
+}
+#top-items{
+    padding-left: 2%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.top-items-text{
+    text-align: center;
+        
+    font-size: 30px;
+}
+
+
+/* review sectio */
+#review-image{
+    padding-left: 20%;
+    border-radius: 90px;
+}
+#review-image1{
+    padding-right: 25%;
+    border-radius: 90px;
+}
+.review-header{
+    padding-left: 20%;
+    font-size: 30px;
+    font-weight: bold;
+}
+#review-text{
+    padding-right: 2%;
+    text-align: center;
+    /* font-family: cursive;
+    font-style: italic; */
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+

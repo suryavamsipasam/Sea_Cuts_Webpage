@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items</title>
+
+    <link rel="stylesheet" href="itemsstyle.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+    <!-- bootstrap-css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg shadow-sm sticky-top custom-navbar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="images/nav-2-removebg-preview.png" alt="Logo" width="140" height="100">
+      </a>
+  
+      <!-- Toggle for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+        <ul class="navbar-nav align-items-center gap-4">
+          <li class="nav-item">
+            <a class="nav-link nav-animate fw-semibold" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-animate fw-semibold" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-animate fw-semibold" href="items.html">Items</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-animate fw-semibold" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+  
+      <!-- Cart Button -->
+      <div>
+        <a href="cart.html" class="btn btn-outline-dark rounded-pill px-3 py-2" id="nav1">
+          <i class="fas fa-shopping-cart me-2"></i>Cart Items
+        </a>
+      </div>
+    </div>
+  </nav>
+
+
+       <!-- cards section -->
+
+  <section style="background-color: #fffefc;">
+    <div style="padding-left: 35%;align-items: center;padding-top: 5%;">
+      <h1 style="padding-left: 12%;">Items List</h1>
+      <img src="images/Group_10.png" alt="" style="padding-bottom: 10px;">
+    </div>
+
+    <!-- cards -->
+
+    <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-top: 20px; padding-left: 3%;padding-right: 3%;">
+
+      <!-- 1st card -->
+      <div class="col" >
+        <div class="card h-100">
+          <img src="images/fish-1.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><b>White Pomfret / తెల్ల చందువా - Medium - Whole Cleaned & Gutted</b></h5><br>
+            <div style="display: flex;">
+              <p class="card-text" style="color: crimson;font-size: large;font-weight: bold;"><b>Rs.590.00</b></p>
+              <p class="card-text" style="padding-left: 3%; text-decoration-line: line-through; color: black;"><b>Rs.658</b></p>
+              <p style="padding-left: 6%;"></p>
+              <p style=" border: 3px solid rgb(255, 200, 0); color: black; text-align: center;"><b>10% off</b></p>
+            </div>
+            <div style="display: flex;">
+              <p>Gross Weight: </p>
+              <p style="padding-left: 2%;"></p>
+              <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">800gms</p>
+              <p style="padding-left: 5%;">Net Weight:</p>
+              <p style="padding-left: 2%;"></p>
+              <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">650gms</p>
+            </div>
+            <div>
+                <button id="btn-style" class="add-to-cart-btn" 
+                        data-name="White Pomfret" 
+                        data-price="590"
+                        data-img="images/fish-1.webp">
+                                                        Add To Cart
+                </button>
+        
+            </div>  
+          </div>
+        </div>
+      </div>
+
+      <!-- 2nd card -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/fish-3.jpg" class="card-img-top" alt="..." height="378px">
+          <div class="card-body">
+            <h5 class="card-title"><b>Sea Bass (Pandugappa) - Curry Cut With Head</b></h5><br>
+            <div style="display: flex;">
+              <p class="card-text" style="color: crimson;font-size: large;font-weight: bold;"><b>Rs.899.00</b></p>
+              <p class="card-text" style="padding-left: 3%; text-decoration-line: line-through; color: black;"><b>Rs.999</b></p>
+              <p style="padding-left: 6%;"></p>
+              <p style=" border: 3px solid rgb(255, 200, 0); color: black; text-align: center;"><b>10% off</b></p>
+            </div>
+            <div style="display: flex;">
+              <p>Gross Weight: </p>
+              <p style="padding-left: 2%;"></p>
+              <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">1300gms</p>
+              <p style="padding-left: 5%;">Net Weight:</p>
+              <p style="padding-left: 2%;"></p>
+              <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">900gms</p>
+            </div>
+            <div>
+                <button id="btn-style" class="add-to-cart-btn" 
+                        data-name="Sea Bass" 
+                        data-price="899"
+                        data-img="images/fish-3.jpg">
+                    Add To Cart
+                </button>
+            </div>  
+          </div>
+        </div>
+      </div>
+
+      <!-- 3rd card -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/prawns-1.webp" class="card-img-top" alt="..." height="378px">
+          <div class="card-body">
+            <h5 class="card-title"><b>Freshwater Prawns / రొయ్యలు - 50-60 Count/Kg - Cleaned & No Tail</b></h5><br>
+            <div style="display: flex;">
+              <p class="card-text" style="color: crimson;font-size: large;font-weight: bold;"><b>Rs.549.00</b></p>
+              <p class="card-text" style="padding-left: 3%; text-decoration-line: line-through; color: black;"><b>Rs.599</b></p>
+              <p style="padding-left: 6%;"></p>
+              <p style=" border: 3px solid rgb(255, 200, 0); color: black; text-align: center;"><b>8% off</b></p>
+            </div>
+
+            <div style="display: flex;">
+              <p>Gross Weight: </p>
+              <p style="padding-left: 2%;"></p>
+              <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">1000gms</p>
+              <p style="padding-left: 5%;">Net Weight:</p>
+              <p style="padding-left: 2%;"></p>
+              <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">550gms</p>
+            </div>
+            <div>
+                <button id="btn-style" class="add-to-cart-btn" 
+                        data-name="Freshwater Prawns" 
+                        data-price="549"
+                        data-img="images/prawns-1.webp">
+                    Add To Cart
+                </button>
+            </div>  
+          </div>
+        </div>
+      </div>
+
+      <!-- 4th card -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/prawns-3.webp" class="card-img-top" alt="..." height="378px">
+          <div class="card-body">
+            <h5 class="card-title"><b>Sea Tiger Prawns / రొయ్యలు - 50-60 Count/Kg - Cleaned & No Tail</b></h5><br>
+            <div style="display: flex;">
+              <p class="card-text" style="color: crimson;font-size: large;font-weight: bold;"><b>Rs.609.00</b></p>
+              <p class="card-text" style="padding-left: 3%; text-decoration-line: line-through; color: black;"><b>Rs.689</b></p>
+              <p style="padding-left: 6%;"></p>
+              <p style=" border: 3px solid rgb(255, 200, 0); color: black; text-align: center;"><b>10% off</b></p>
+            </div>
+            <div style="display: flex;">
+              <p>Gross Weight: </p>
+              <p style="padding-left: 2%;"></p>
+              <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">500gms</p>
+              <p style="padding-left: 5%;">Net Weight:</p>
+              <p style="padding-left: 2%;"></p>
+              <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">250gms</p>
+            </div>
+            <div>
+                <button id="btn-style" class="add-to-cart-btn" 
+                        data-name="Sea Tiger Prawns" 
+                        data-price="609"
+                        data-img="images/prawns-3.webp">
+                    Add To Cart
+                </button>
+            </div>  
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 5th card -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/fish-2.jpg" class="card-img-top" alt="..." height="378px">
+          <div class="card-body">
+            <h5 class="card-title"><b>Godavari Pulasa (seasonal)</b></h5><br>
+            <div style="display: flex;">
+              <p class="card-text" style="color: crimson;font-size: large;font-weight: bold;"><b>Rs.549.00</b></p>
+              <p class="card-text" style="padding-left: 3%; text-decoration-line: line-through; color: black;"><b>Rs.599</b></p>
+              <p style="padding-left: 6%;"></p>
+              <p style=" border: 3px solid rgb(255, 200, 0); color: black; text-align: center;"><b>8% off</b></p>
+            </div>
+            <div style="display: flex;">
+              <p>Gross Weight: </p>
+              <p style="padding-left: 2%;"></p>
+              <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">1000gms</p>
+              <p style="padding-left: 5%;">Net Weight:</p>
+              <p style="padding-left: 2%;"></p>
+              <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">550gms</p>
+            </div><br>
+            <div>
+              <p id="btn-stock-style">Out Of Stock</p>
+            </div> 
+          </div>
+        </div>
+      </div>
+
+    <!-- 6th card -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/crab-1.webp" class="card-img-top" alt="..." height="378px">
+        <div class="card-body">
+          <h5 class="card-title"><b>Live Mud Crab / గుడ్డు పీతలు</b></h5><br>
+          <div style="display: flex;">
+            <p class="card-text" style="color: crimson;font-size: large;font-weight: bold;"><b>Rs.849.00</b></p>
+            <p class="card-text" style="padding-left: 3%; text-decoration-line: line-through; color: black;"><b>Rs.899</b></p>
+            <p style="padding-left: 6%;"></p>
+            <p style=" border: 3px solid rgb(255, 200, 0); color: black; text-align: center;"><b>5% off</b></p>
+          </div>
+          <div style="display: flex;">
+            <p>Gross Weight: </p>
+            <p style="padding-left: 2%;"></p>
+            <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">1000gms</p>
+            <p style="padding-left: 5%;">Net Weight:</p>
+            <p style="padding-left: 2%;"></p>
+            <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">650gms</p>
+          </div><br>
+          <div>
+            <button id="btn-style" class="add-to-cart-btn" 
+                    data-name="Live Mud Crab" 
+                    data-price="849"
+                    data-img="images/crab-1.webp">
+                Add To Cart
+            </button>
+          </div>  
+        </div>
+      </div>
+    </div>
+      
+
+
+    <!-- 7th card -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/fish-4.webp" class="card-img-top" alt="..." height="378px">
+        <div class="card-body">
+          <h5 class="card-title"><b>Black Pomfret / నల్ల చందువా / Medium - Steaks</b></h5><br>
+          <div style="display: flex;">
+            <p class="card-text" style="color: crimson;font-size: large;font-weight: bold;"><b>Rs.749.00</b></p>
+            <p class="card-text" style="padding-left: 3%; text-decoration-line: line-through; color: black;"><b>Rs.799</b></p>
+            <p style="padding-left: 6%;"></p>
+            <p style=" border: 3px solid rgb(255, 200, 0); color: black; text-align: center;"><b>5% off</b></p>
+          </div>
+          <div style="display: flex;">
+            <p>Gross Weight: </p>
+            <p style="padding-left: 2%;"></p>
+            <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">1000gms</p>
+            <p style="padding-left: 5%;">Net Weight:</p>
+            <p style="padding-left: 2%;"></p>
+            <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">800gms</p>
+          </div><br>
+          <div>
+            <button id="btn-style" class="add-to-cart-btn" 
+                        data-name="Black Pomfret" 
+                        data-price="749"
+                        data-img="images/fish-4.webp">
+                    Add To Cart
+            </button>
+          </div>  
+        </div>
+      </div>
+    </div>
+    
+
+
+  <!-- 8th card -->
+  <div class="col">
+    <div class="card h-100">
+      <img src="images/crab-2.jpg" class="card-img-top" alt="..." height="378px">
+      <div class="card-body">
+        <h5 class="card-title"><b>Blue Crab - Medium</b></h5><br>
+        <div style="display: flex;">
+          <p class="card-text" style="color: crimson;font-size: large;font-weight: bold;"><b>Rs.739.00</b></p>
+          <p class="card-text" style="padding-left: 3%; text-decoration-line: line-through; color: black;"><b>Rs.799</b></p>
+          <p style="padding-left: 6%;"></p>
+          <p style=" border: 3px solid rgb(255, 200, 0); color: black; text-align: center;"><b>6% off</b></p>
+        </div>
+        <div style="display: flex;">
+          <p>Gross Weight: </p>
+          <p style="padding-left: 2%;"></p>
+          <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">1000gms</p>
+          <p style="padding-left: 5%;">Net Weight:</p>
+          <p style="padding-left: 2%;"></p>
+          <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">650gms</p>
+        </div><br><br>
+        <div>
+            <button id="btn-style" class="add-to-cart-btn" 
+                        data-name="Blue Crab - Medium" 
+                        data-price="739"
+                        data-img="images/crab-2.webp">
+                    Add To Cart
+            </button>
+        </div>  
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- 9th card -->
+  <div class="col">
+    <div class="card h-100">
+      <img src="images/squid-1.jpg" class="card-img-top" alt="..." height="378px">
+      <div class="card-body">
+        <h5 class="card-title"><b>Squid</b></h5><br>
+        <div style="display: flex;">
+          <p class="card-text" style="color: crimson;font-size: large;font-weight: bold;"><b>Rs.539.00</b></p>
+          <p class="card-text" style="padding-left: 3%; text-decoration-line: line-through; color: black;"><b>Rs.599</b></p>
+          <p style="padding-left: 6%;"></p>
+          <p style=" border: 3px solid rgb(255, 200, 0); color: black; text-align: center;"><b>6% off</b></p>
+        </div>
+        <div style="display: flex;">
+          <p>Gross Weight: </p>
+          <p style="padding-left: 2%;"></p>
+          <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">500gms</p>
+          <p style="padding-left: 5%;">Net Weight:</p>
+          <p style="padding-left: 2%;"></p>
+          <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">350gms</p>
+        </div><br><br>
+        <div>
+            <button id="btn-style" class="add-to-cart-btn" 
+                        data-name="Squid" 
+                        data-price="539"
+                        data-img="images/squid-1.jpg">
+                    Add To Cart
+            </button>
+        </div>  
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- 10th card -->
+  <div class="col">
+    <div class="card h-100">
+      <img src="images/octopus-2.jpg" class="card-img-top" alt="..." height="378px">
+      <div class="card-body">
+        <h5 class="card-title"><b>White Baby Octopus</b></h5><br>
+        <div style="display: flex;">
+          <p class="card-text" style="color: crimson;font-size: large;font-weight: bold;"><b>Rs.749.00</b></p>
+          <p class="card-text" style="padding-left: 3%; text-decoration-line: line-through; color: black;"><b>Rs.799</b></p>
+          <p style="padding-left: 6%;"></p>
+          <p style=" border: 3px solid rgb(255, 200, 0); color: black; text-align: center;"><b>5% off</b></p>
+        </div>
+        <div style="display: flex;">
+          <p>Gross Weight: </p>
+          <p style="padding-left: 2%;"></p>
+          <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">1000gms</p>
+          <p style="padding-left: 5%;">Net Weight:</p>
+          <p style="padding-left: 2%;"></p>
+          <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">800gms</p>
+        </div><br>
+        <div>
+            <button id="btn-style" class="add-to-cart-btn" 
+                        data-name="White Baby Octopus" 
+                        data-price="749"
+                        data-img="images/octopus-2.jpg">
+                    Add To Cart
+            </button>
+        </div>  
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 11th card -->
+  <div class="col">
+    <div class="card h-100">
+      <img src="images/fish-5.webp" class="card-img-top" alt="..." height="378px">
+      <div class="card-body">
+        <h5 class="card-title"><b>Murrel / Korameenu / కోరమీను - Live - Skinless - Boneless - cubes</b></h5><br>
+        <div style="display: flex;">
+          <p class="card-text" style="color: crimson;font-size: large;font-weight: bold;"><b>Rs.1389.00</b></p>
+          <p class="card-text" style="padding-left: 3%; text-decoration-line: line-through; color: black;"><b>Rs.1439</b></p>
+          <p style="padding-left: 6%;"></p>
+          <p style=" border: 3px solid rgb(255, 200, 0); color: black; text-align: center;"><b>3% off</b></p>
+        </div>
+        <div style="display: flex;">
+          <p>Gross Weight: </p>
+          <p style="padding-left: 2%;"></p>
+          <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">1000gms</p>
+          <p style="padding-left: 5%;">Net Weight:</p>
+          <p style="padding-left: 2%;"></p>
+          <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">800gms</p>
+        </div>
+        <div>
+            <button id="btn-style" class="add-to-cart-btn" 
+                        data-name="Murrel / Korameenu" 
+                        data-price="1389"
+                        data-img="images/fish-5.webp">
+                    Add To Cart
+            </button>
+        </div>  
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 12th card -->
+  <div class="col">
+    <div class="card h-100">
+      <img src="images/fish-6.webp" class="card-img-top" alt="..." height="378px">
+      <div class="card-body">
+        <h5 class="card-title"><b>Shark /సోర్రా</b></h5><br>
+        <div style="display: flex;">
+          <p class="card-text" style="color: crimson;font-size: large;font-weight: bold;"><b>Rs.549.00</b></p>
+          <p class="card-text" style="padding-left: 3%; text-decoration-line: line-through; color: black;"><b>Rs.599</b></p>
+          <p style="padding-left: 6%;"></p>
+          <p style=" border: 3px solid rgb(255, 200, 0); color: black; text-align: center;"><b>8% off</b></p>
+        </div>
+        <div style="display: flex;">
+          <p>Gross Weight: </p>
+          <p style="padding-left: 2%;"></p>
+          <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">1000gms</p>
+          <p style="padding-left: 5%;">Net Weight:</p>
+          <p style="padding-left: 2%;"></p>
+          <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">750gms</p>
+        </div><br>
+        <div>
+            <button id="btn-style" class="add-to-cart-btn" 
+                        data-name="Shark" 
+                        data-price="549"
+                        data-img="images/fish-6.webp">
+                    Add To Cart
+            </button>
+        </div>  
+      </div>
+    </div>
+  </div>
+
+   </div> 
+  
+
+    <!-- top selling items -->
+    <div class="text-center my-5">
+      <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bold; color: #222;font-size: 40px;">Top Selling Items</h2>
+      <img src="images/Group_10.png" alt="Decorative divider" style="padding-bottom: 10px;" width="15%">
+    </div>
+    
+     <!-- New Row Starts -->
+     <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-top: 0px; padding-left: 3%;padding-right: 3%;">
+
+        <!-- top 1 item -->
+         
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/fish-8.jpg" class="card-img-top" alt="..." height="378px">
+            <div class="card-body">
+              <h5 class="card-title"><b>Tuna</b></h5><br>
+              <div style="display: flex;">
+                <p class="card-text" style="color: crimson;font-size: large;font-weight: bold;"><b>Rs.849.00</b></p>
+                <p class="card-text" style="padding-left: 3%; text-decoration-line: line-through; color: black;"><b>Rs.899</b></p>
+                <p style="padding-left: 6%;"></p>
+                <p style=" border: 3px solid rgb(255, 200, 0); color: black; text-align: center;"><b>8% off</b></p>
+              </div>
+  
+              <div style="display: flex;">
+                <p>Gross Weight: </p>
+                <p style="padding-left: 2%;"></p>
+                <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">1000gms</p>
+                <p style="padding-left: 5%;">Net Weight:</p>
+                <p style="padding-left: 2%;"></p>
+                <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">750gms</p>
+              </div>
+              <div>
+                  <button id="btn-style" class="add-to-cart-btn" 
+                          data-name="Tuna" 
+                          data-price="849"
+                          data-img="images/fish-8.jpg">
+                      Add To Cart
+                  </button>
+              </div>  
+            </div>
+          </div>
+        </div>
+
+        <!-- top-2 item -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/fish-7.jpg" class="card-img-top" alt="..." height="378px">
+            <div class="card-body">
+              <h5 class="card-title"><b>Godavari Pulasa (seasonal)</b></h5><br>
+              <div style="display: flex;">
+                <p class="card-text" style="color: crimson;font-size: large;font-weight: bold;"><b>Rs.549.00</b></p>
+                <p class="card-text" style="padding-left: 3%; text-decoration-line: line-through; color: black;"><b>Rs.599</b></p>
+                <p style="padding-left: 6%;"></p>
+                <p style=" border: 3px solid rgb(255, 200, 0); color: black; text-align: center;"><b>8% off</b></p>
+              </div>
+              <div style="display: flex;">
+                <p>Gross Weight: </p>
+                <p style="padding-left: 2%;"></p>
+                <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">1000gms</p>
+                <p style="padding-left: 5%;">Net Weight:</p>
+                <p style="padding-left: 2%;"></p>
+                <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">550gms</p>
+              </div><br>
+              <div>
+                <p id="btn-stock-style">Out Of Stock</p>
+              </div> 
+            </div>
+          </div>
+        </div>
+
+        <!-- top-3 item -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/prawns-4.jpg" class="card-img-top" alt="..." height="378px">
+            <div class="card-body">
+              <h5 class="card-title"><b>Tiger Prawns</b></h5><br>
+              <div style="display: flex;">
+                <p class="card-text" style="color: crimson;font-size: large;font-weight: bold;"><b>Rs.849.00</b></p>
+                <p class="card-text" style="padding-left: 3%; text-decoration-line: line-through; color: black;"><b>Rs.899</b></p>
+                <p style="padding-left: 6%;"></p>
+                <p style=" border: 3px solid rgb(255, 200, 0); color: black; text-align: center;"><b>8% off</b></p>
+              </div>
+  
+              <div style="display: flex;">
+                <p>Gross Weight: </p>
+                <p style="padding-left: 2%;"></p>
+                <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">1000gms</p>
+                <p style="padding-left: 5%;">Net Weight:</p>
+                <p style="padding-left: 2%;"></p>
+                <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">750gms</p>
+              </div>
+              <div>
+                  <button id="btn-style" class="add-to-cart-btn" 
+                          data-name="Tiger Prawns" 
+                          data-price="849"
+                          data-img="images/prawns-4.jpg">
+                      Add To Cart
+                  </button>
+              </div>  
+            </div>
+          </div>
+        </div>
+
+        <!-- top-4 item -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/crab-3.jpg" class="card-img-top" alt="..." height="378px">
+            <div class="card-body">
+              <h5 class="card-title"><b>Alaskan King Crab</b></h5><br>
+              <div style="display: flex;">
+                <p class="card-text" style="color: crimson;font-size: large;font-weight: bold;"><b>Rs.849.00</b></p>
+                <p class="card-text" style="padding-left: 3%; text-decoration-line: line-through; color: black;"><b>Rs.899</b></p>
+                <p style="padding-left: 6%;"></p>
+                <p style=" border: 3px solid rgb(255, 200, 0); color: black; text-align: center;"><b>8% off</b></p>
+              </div>
+  
+              <div style="display: flex;">
+                <p>Gross Weight: </p>
+                <p style="padding-left: 2%;"></p>
+                <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">1000gms</p>
+                <p style="padding-left: 5%;">Net Weight:</p>
+                <p style="padding-left: 2%;"></p>
+                <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">750gms</p>
+              </div>
+              <div>
+                  <button id="btn-style" class="add-to-cart-btn" 
+                          data-name="Alaskan King Crab" 
+                          data-price="849"
+                          data-img="images/crab-3.jpg">
+                      Add To Cart
+                  </button>
+              </div>  
+            </div>
+          </div>
+        </div>
+
+        <!-- top-5 item -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/fish-9.webp" class="card-img-top" alt="..." height="378px">
+            <div class="card-body">
+              <h5 class="card-title"><b>Catla Fish</b></h5><br>
+              <div style="display: flex;">
+                <p class="card-text" style="color: crimson;font-size: large;font-weight: bold;"><b>Rs.949.00</b></p>
+                <p class="card-text" style="padding-left: 3%; text-decoration-line: line-through; color: black;"><b>Rs.999</b></p>
+                <p style="padding-left: 6%;"></p>
+                <p style=" border: 3px solid rgb(255, 200, 0); color: black; text-align: center;"><b>8% off</b></p>
+              </div>
+  
+              <div style="display: flex;">
+                <p>Gross Weight: </p>
+                <p style="padding-left: 2%;"></p>
+                <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">1000gms</p>
+                <p style="padding-left: 5%;">Net Weight:</p>
+                <p style="padding-left: 2%;"></p>
+                <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">850gms</p>
+              </div>
+              <div>
+                  <button id="btn-style" class="add-to-cart-btn" 
+                          data-name="Catla Fish" 
+                          data-price="949"
+                          data-img="images/fish-9.webp">
+                      Add To Cart
+                  </button>
+              </div>  
+            </div>
+          </div>
+        </div>
+
+        <!-- top-6 item -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/platter.jpg" class="card-img-top" alt="..." height="378px">
+            <div class="card-body">
+              <h5 class="card-title"><b>Sea Food Platter</b></h5><br>
+              <div style="display: flex;">
+                <p class="card-text" style="color: crimson;font-size: large;font-weight: bold;"><b>Rs.1899.00</b></p>
+                <p class="card-text" style="padding-left: 3%; text-decoration-line: line-through; color: black;"><b>Rs.1999</b></p>
+                <p style="padding-left: 6%;"></p>
+                <p style=" border: 3px solid rgb(255, 200, 0); color: black; text-align: center;"><b>10% off</b></p>
+              </div>
+  
+              <div style="display: flex;">
+                <p>Gross Weight: </p>
+                <p style="padding-left: 2%;"></p>
+                <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">2500gms</p>
+                <p style="padding-left: 5%;">Net Weight:</p>
+                <p style="padding-left: 2%;"></p>
+                <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">2150gms</p>
+              </div>
+              <div>
+                  <button id="btn-style" class="add-to-cart-btn" 
+                          data-name="Sea Food Platter" 
+                          data-price="1899"
+                          data-img="images/platter.jpg">
+                      Add To Cart
+                  </button>
+              </div>  
+            </div>
+          </div>
+        </div>
+
+        <!--top-7 item  -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/fish-10.webp" class="card-img-top" alt="..." height="378px">
+            <div class="card-body">
+              <h5 class="card-title"><b>Apollo Fish</b></h5><br>
+              <div style="display: flex;">
+                <p class="card-text" style="color: crimson;font-size: large;font-weight: bold;"><b>Rs.849.00</b></p>
+                <p class="card-text" style="padding-left: 3%; text-decoration-line: line-through; color: black;"><b>Rs.899</b></p>
+                <p style="padding-left: 6%;"></p>
+                <p style=" border: 3px solid rgb(255, 200, 0); color: black; text-align: center;"><b>8% off</b></p>
+              </div>
+  
+              <div style="display: flex;">
+                <p>Gross Weight: </p>
+                <p style="padding-left: 2%;"></p>
+                <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">1000gms</p>
+                <p style="padding-left: 5%;">Net Weight:</p>
+                <p style="padding-left: 2%;"></p>
+                <p style="border: 3px solid bisque; border-radius: 7px; text-align: center;background-color: bisque;">750gms</p>
+              </div>
+              <div>
+                  <button id="btn-style" class="add-to-cart-btn" 
+                          data-name="Apollo Fish" 
+                          data-price="849"
+                          data-img="images/fish-10.webp">
+                      Add To Cart
+                  </button>
+              </div>  
+            </div>
+          </div>
+        </div>
+
+
+</div>
+</section>
+<script src="cart.js"></script>
+</body>
+</html>

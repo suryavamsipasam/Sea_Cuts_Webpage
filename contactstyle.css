@@ -1,0 +1,197 @@
+
+  
+ /* Body background */
+ body {
+    background-color: #fefcfb;
+  }
+  
+  /* Navbar Styling */
+  .custom-navbar {
+    background-color: #fff5e6;
+    padding: 10px 30px;
+    border-bottom: 2px solid #ffe2cc;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.05rem;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ff6f61;
+  }
+  
+  /* Navbar hover underline animation */
+  .nav-animate {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-animate::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff6f61;
+    transition: 0.4s ease-out;
+  }
+  
+  .nav-animate:hover::after {
+    width: 100%;
+  }
+  
+  /* Cart Button */
+  #nav1 {
+    border: 2px solid #ff6f61;
+    background-color: white;
+    color: #ff6f61;
+    font-weight: 500;
+    transition: 0.3s ease;
+  }
+  
+  #nav1:hover {
+    background-color: #ff6f61;
+    color: white;
+  }
+  
+  
+
+/* review section */
+#review-image{
+    padding-left: 20%;
+    border-radius: 90px;
+}
+#review-image1{
+    padding-right: 25%;
+    border-radius: 90px;
+}
+
+.review-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    transition: transform 0.4s ease;
+  }
+  
+  .review-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .review-header {
+    padding-left: 20%;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+  }
+  
+  .review-text {
+    padding-right: 2%;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #444;
+    text-align: justify;
+    animation: fadeIn 1.5s ease forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  .review-box {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+  }
+  
+  .review-box.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+
+  /* Footer Section */
+
+  footer h4 {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+  }
+  
+  footer p, footer li {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 15px;
+    color: #ddd;
+  }
+  
+  footer input, footer textarea {
+    border-radius: 10px;
+    border: none;
+  }
+  
+  footer .btn-warning {
+    border-radius: 10px;
+    padding: 8px 20px;
+    font-weight: bold;
+  }
+  .modal-content {
+    background-color: #fffefc;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+  }
+  
+  .modal-title {
+    font-family: 'Segoe UI', cursive;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+
+
+  .testimonial-carousel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .testimonial-item {
+    background-color: #34495e;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .testimonial-text {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 15px;
+  }
+
+  .testimonial-item h5 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .testimonial-role {
+    font-size: 14px;
+    color: #f39c12;
+  }

@@ -1,0 +1,176 @@
+/* Body background */
+ body {
+    background-color: #fefcfb;
+  }
+  
+  /* Navbar Styling */
+  .custom-navbar {
+    background-color: #fff5e6;
+    padding: 10px 30px;
+    border-bottom: 2px solid #ffe2cc;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.05rem;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ff6f61;
+  }
+  
+  /* Navbar hover underline animation */
+  .nav-animate {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-animate::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff6f61;
+    transition: 0.4s ease-out;
+  }
+  
+  .nav-animate:hover::after {
+    width: 100%;
+  }
+  
+  /* Cart Button */
+  #nav1 {
+    border: 2px solid #ff6f61;
+    background-color: white;
+    color: #ff6f61;
+    font-weight: 500;
+    transition: 0.3s ease;
+  }
+  
+  #nav1:hover {
+    background-color: #ff6f61;
+    color: white;
+  }
+
+
+
+
+/* cards */
+#btn-style{
+    background-color: rgb(255, 204, 0);
+    color: black; 
+    font-weight: bold;
+    width: 325px;
+    padding-left: 7%;
+}
+#btn-stock-style{
+    background-color: rgba(210, 231, 252, 0.906);
+    color: black; 
+    font-weight: bold;
+    width: 325px;
+    padding-left: 5%;
+    border: 3px solid black;
+    text-align: center;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 16px;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  #btn-style:hover, #btn-stock-style:hover {
+    transform: scale(1.03);
+    transition: transform 0.2s ease-in-out;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+  }
+    
+  #btn-style {
+    /* background-color: rgb(255, 204, 0); */
+    background-color: burlywood;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  #btn-style:hover {
+    background-color: #218838;
+  }
+  
+  #btn-stock-style {
+    background-color: rgba(210, 231, 252, 0.906);
+    color: #721c24;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid cornsilk;
+    border-radius: 25px;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+  }
+  
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .nav-animate {
+    position: relative;
+    transition: color 0.3s;
+  }
+  
+  .nav-animate::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+  }
+  
+  .nav-animate:hover::after {
+    width: 100%;
+  }
+  
+
+
+
+/* popular items section */
+#item-images{
+    border-radius: 130px;
+    border: 10px solid rgb(255, 200, 0);
+}
+#top-items{
+    padding-left: 2%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.top-items-text{
+    text-align: center;
+        
+    font-size: 30px;
+}

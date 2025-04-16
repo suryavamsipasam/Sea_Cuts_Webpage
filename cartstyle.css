@@ -1,0 +1,61 @@
+/* Body background */
+body {
+    background-color: #fefcfb;
+  }
+  
+  /* Navbar Styling */
+  .custom-navbar {
+    background-color: #fff5e6;
+    padding: 10px 30px;
+    border-bottom: 2px solid #ffe2cc;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.05rem;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ff6f61;
+  }
+  
+  /* Navbar hover underline animation */
+  .nav-animate {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-animate::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff6f61;
+    transition: 0.4s ease-out;
+  }
+  
+  .nav-animate:hover::after {
+    width: 100%;
+  }
+  
+  /* Cart Button */
+  #nav1 {
+    border: 2px solid #ff6f61;
+    background-color: white;
+    color: #ff6f61;
+    font-weight: 500;
+    transition: 0.3s ease;
+  }
+  
+  #nav1:hover {
+    background-color: #ff6f61;
+    color: white;
+  }
+
+  .toast-body {
+    font-weight: 600;
+  }
+  
